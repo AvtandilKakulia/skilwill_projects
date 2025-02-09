@@ -1,0 +1,90 @@
+@font-face {
+  font-family: HP;
+  src: url(./fonts/HarryPotter.ttf);
+}
+
+body {
+  background: linear-gradient(135deg, #2c3e50, #1c2833);
+ 
+}
+
+.card-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.card{
+  width: 450px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7); 
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+}
+
+.card-image {
+  width: 100%;
+  object-fit: contain;
+  border-bottom: 2px solid #ffffff;
+  aspect-ratio: 4/3;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 42px;
+  font-weight: 100;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'HP';
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  overflow: hidden;
+}
+
+.card-actors {
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3498db;
+}
+
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #2980b9;
+}
