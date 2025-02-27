@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.toggle-box i {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.toggle-box > button {
+  padding: 8px;
+  cursor: pointer;
+}
