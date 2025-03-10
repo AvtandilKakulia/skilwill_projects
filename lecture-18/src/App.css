@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px;
+}
+
+.active-tasks,
+.completed-tasks {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 450px;
+  padding: 8px 8px;
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.active-tasks h2,
+.completed-tasks h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.add-new button {
+  display: flex;
+  width: 100%;
+  margin: 8px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #55c19d;
+  cursor: pointer;
+}
+
+.add-new button span {
+  width: 100%;
+}
+
+.add-new button i {
+  align-self: center;
+}
+
+.completed-notation {
+  display: flex;
+  width: 100%;
+  margin: 6px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #55c19d;
+}
+
+.completed-notation p{
+  width: 100%;
+}
+
+.completed-notation i{
+  align-self: center;
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  height: 100%;
+}
+
+/* TASK */
+
+.task {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  border: 1px solid rgba(128, 128, 128, 0.8)
+}
+
+.task h3 {
+  text-align: center;
+  margin-top: 8px;
+  color: #fff;
+  background-color: blueviolet;
+}
+
+.task p {
+  flex-grow: 1;
+  margin: 3px;
+  padding: 8px;
+  overflow-wrap: anywhere;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #cccccc75;
+  overflow: overlay;
+}
+
+.task-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+  padding: 3px;
+}
+
+.task-buttons button {
+  padding: 3px 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #55c19d90;
+}
+
+
+/* ADD TODO */
+.add-todo {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.new-todo {
+  position: relative;
+  width: 350px;
+  padding: 4px;
+  border: 1px solid white;
+}
+
+.new-todo .fa-xmark {
+  position: absolute;
+  top: -15px;
+  right: -25px;
+  font-size: x-large;
+  color: #fff;
+  cursor: pointer;
+}
+
+.new-todo .fa-xmark:hover {
+  rotate: 180deg;
+  transition: all .5s;
+}
+
+.new-todo input {
+  width: 100%;
+  height: 35px;
+  padding: 4px 35px 4px 4px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.new-todo .fa-circle-check {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: x-large;
+  color: #55c19d;
+  cursor: pointer;
+}
+
+.new-todo .fa-circle-check:hover {
+  scale: 1.1;
+  color: #1a7959;
+}
+
+.new-todo .fa-pen-to-square {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: x-large;
+  color: #55c19d;
+  cursor: pointer;
+}
+
+.new-todo input::placeholder {
+  text-align: center;
+  font-weight: lighter;
+  text-transform: none;
+}
+
+.new-todo textarea {
+  resize: none;
+  width: 100%;
+  height: 250px;
+  padding: 4px;
+}
