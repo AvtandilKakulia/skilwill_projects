@@ -1,0 +1,31 @@
+.todoWrapper {
+    max-width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px
+}
+
+.todoHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    border-bottom: 1px solid black
+}
+
+.todoStatus{
+    margin: 0;
+
+    span{
+        color: green;
+        font-weight: bold;
+    }
+}
+
+
+.todoBody{
+    margin: 0; 
+    border-bottom: 1px solid black
+}
